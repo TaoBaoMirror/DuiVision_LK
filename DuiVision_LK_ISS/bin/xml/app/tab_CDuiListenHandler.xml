@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<div pos="0,75,-0,-0" >
+	<radiobtn name= "Radio1" title="地址降序" pos="5,10,100,25" check="true" group="listen" skin="IDB_RADIO_BUTTON"/>
+	<radiobtn name= "Radio2" title="地址升序" pos="150,10,250,25" check="false" group="listen" skin="IDB_RADIO_BUTTON"/>
+	<radiobtn name= "Radio3" title="有效期降序" pos="300,10,400,25" check="false" group="listen" skin="IDB_RADIO_BUTTON"/>
+	<radiobtn name= "Radio4" title="有效期升序" pos="450,10,550,25" check="false" group="listen" skin="IDB_RADIO_BUTTON"/>
+	<radiobtn name= "Radio5" title="当前量降序" pos="600,10,750,25" check="false" group="listen" skin="IDB_RADIO_BUTTON"/>
+	<radiobtn name= "Radio6" title="当前量升序" pos="800,10,900,25" check="false" group="listen" skin="IDB_RADIO_BUTTON"/>
+	
+	<gridctrl name="gridctrl_Listen" pos="5,35,-10,-10" show="1"
+		img-scroll="skin:IDB_SCROLL_V" img-scrollh="skin:IDB_SCROLL_H"  img-sep="skin:IDB_LINE_RP" 
+		img-count="12" image="skin:IDB_LIST_IMG"
+		left-pos="0" row-height="25" header-height="25" bk-transparent="10"
+		font-title="big" font="default"
+		valign="middle" down-row="0" 
+		crtext="255,64,64,64" crhover="128,0,0" crpush="0,112,235"
+		crtitle="32,32,32" crsep="200,160,160,160" crrowhover="50,128,128,128" >
+		
+		<column title="药品名称" width="200" align="center" show="1" bkimage="skins\image\Girdhead.png"/>
+		<column title="规格" width="110" align="center" show="1" bkimage="skins\image\Girdhead.png"/>
+		<column title="厂家" width="200" align="center"  show="1" bkimage="skins\image\Girdhead.png"/>
+		<column title="当前量" width="75" align="center" show="1" bkimage="skins\image\Girdhead.png"/>
+		<column title="有效期" width="175" align="center"  show="1" bkimage="skins\image\Girdhead.png"/>
+		<column title="批号" width="75" align="center"  show="1" bkimage="skins\image\Girdhead.png"/>
+		<column title="位置" width="170" align="center"  show="1" bkimage="skins\image\Girdhead.png"/>
+	</gridctrl>
+</div>

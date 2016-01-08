@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="gbk"?>
+<Error>
+    <!--用户管理模块返回错误类型-->
+  <ER_LIST_USERS code="100001">list user's information failed</ER_LIST_USERS>
+  <ER_ADD_USER code="100002">add new user failed</ER_ADD_USER>
+  <ER_OLD_PASSWORD code="100003">check password error</ER_OLD_PASSWORD>
+  <ER_LIST_GROUP code="100004">list user</ER_LIST_GROUP>
+  <ER_USER_EXISTED code="100005">user already exists</ER_USER_EXISTED>
+  <ER_IKEY_BOUND code="100006">already bound to other users</ER_IKEY_BOUND>
+  
+  <!--加密狗模块返回错误类型-->
+  <ER_OPEN_DEVICE code="110001">open ikey failed</ER_OPEN_DEVICE>
+  <ER_CLOSE_DEVICE code="110002">close ikey failed</ER_CLOSE_DEVICE>
+  <ER_VERIFY_USER_PIN code="110003">user PIN check failed</ER_VERIFY_USER_PIN>
+  <ER_HANDLE_IS_NULL code="110004">the device handle is empty</ER_HANDLE_IS_NULL>
+  <ER_CREATE_APP_DIR code="110005">create application directory failed</ER_CREATE_APP_DIR>
+  <ER_CREATE_DATA_FILE code="110006">create data files failed</ER_CREATE_DATA_FILE>
+  <ER_CREATE_MD5_HMAC_KEY code="110007">create MD5_HMAC_KEY files failed</ER_CREATE_MD5_HMAC_KEY>
+  <ER_MD5_HMAC_AUTHENTICATE code="110008">sign MD5_HMAC failed </ER_MD5_HMAC_AUTHENTICATE>
+  <ER_OPEN_DIR code="110009">open directory failed</ER_OPEN_DIR>
+  <ER_GET_USER code="110010">get user name failed</ER_GET_USER>
+  
+  <ER_GET_LICENSE code="111001">get software license failed</ER_GET_LICENSE>
+  <ER_QUERY_FEATURE code="111002">query signature failed</ER_QUERY_FEATURE>
+  <ER_QUERY_RESPONSE code="111003">query response error</ER_QUERY_RESPONSE>
+  
+  <!--系统配置模块返回错误类型-->
+  <ER_NO_CONFIG_FILE code="120001">no configuration file </ER_NO_CONFIG_FILE>
+  <ER_CONFIG_FILE code="120002">configuration file error</ER_CONFIG_FILE>
+  <ER_LOAD_CONFIG_FILE code="120003">load configuration file failed</ER_LOAD_CONFIG_FILE>
+  <ER_UPDATE_CONFIG code="120004">update configuration file failed</ER_UPDATE_CONFIG>
+  
+  <!--处方管理模块返回错误类型-->
+  <ER_NO_PATIENT_INFO code="130001">No patient information</ER_NO_PATIENT_INFO>
+  <ER_NO_MEDICINE_INFO code="130002">No Drug Information</ER_NO_MEDICINE_INFO>
+  <ER_SAVE_PRESCRIPTION code="130003">Save prescribing information failed</ER_SAVE_PRESCRIPTION>
+  <ER_SAVE_PATIENT code="130004">Failed to save the patient information</ER_SAVE_PATIENT>
+  <ER_SAVE_PRESCRIPTION_MEDICINE code="130005">Save Failed Drug Information</ER_SAVE_PRESCRIPTION_MEDICINE>
+  <ER_INPUT_PRESCRIPTION code="130006">Entry prescribing information failed</ER_INPUT_PRESCRIPTION>
+  <ER_QUERY_PRESCRIPTION code="130007">Prescribing information query fails</ER_QUERY_PRESCRIPTION>
+  <ER_GET_PATIENT code="130008">Query patient information failed</ER_GET_PATIENT>
+  <ER_GET_PRESCRIPTION_MEDICINE code="130009">Discover prescription drug information failed</ER_GET_PRESCRIPTION_MEDICINE>
+  <ER_MODIFY_PRESCRIPTION code="130010">Modify prescribing information failed</ER_MODIFY_PRESCRIPTION>
+  <ER_MODIFY_PRESCRIPTION_MEDICINE code="130011">Modify prescription drug information failed</ER_MODIFY_PRESCRIPTION_MEDICINE>
+  <ER_MODIFY_PRESCRIPTION_PATIENT code="130012">Modify patient prescription information failed</ER_MODIFY_PRESCRIPTION_PATIENT>
+  <ER_DEL_PRESCRIPTION code="130013">Remove Prescription information failure</ER_DEL_PRESCRIPTION>
+  <ER_DEL_PRESCRIPTION_MEDICINE code="130014">Remove the prescription drug information failed</ER_DEL_PRESCRIPTION_MEDICINE>
+  <ER_DEL_PATIENT code="130015">Remove patient information failed</ER_DEL_PATIENT>
+  
+  <!--数据库管理模块返回错误类型-->
+  <ER_DB_INIT code="140001">database initialization failed</ER_DB_INIT>
+  <ER_DB_CONNECT code="140002">database connect failed</ER_DB_CONNECT>
+  <WM_NO_SQLTEXT code="140003">create equipment state monitoring thread failed</WM_NO_SQLTEXT>
+  <ER_EXECUTE_SQL code="140004">execute SQL error</ER_EXECUTE_SQL>
+  <WM_DATA_END code="140005">result focus on the end of last line</WM_DATA_END>
+  <ER_NO_DATASET code="140006">dateset is empty</ER_NO_DATASET>
+  <ER_DB_NOT_OPEN code="140007">database isn't open</ER_DB_NOT_OPEN>
+  <ER_SERVER_STATE code="140008">database server connection state error</ER_SERVER_STATE>
+  <ER_DB_PARAM code="140009">backup database's name is empty</ER_DB_PARAM>
+  <ER_DB_BACKUP code="140010">backup database error</ER_DB_BACKUP>
+  <ER_DB_RECOVER code="140011">recover database error</ER_DB_RECOVER>
+  <ER_UPDATE_TABLE code="140012">update table failed</ER_UPDATE_TABLE>
+  <ER_NO_DATA code="140013">no data for query</ER_NO_DATA>
+  
+  <!--热敏打印机模块返回错误类型-->
+  <ER_PRINTER_PORT_NUM code="150001">Thermal printer port number error</ER_PRINTER_PORT_NUM>
+  <ER_OPEN_PRINTER_PORT code="150002">Thermal printer port open failure</ER_OPEN_PRINTER_PORT>
+  <ER_NO_BASKET_ID code="150003">No basket card</ER_NO_BASKET_ID>
+  <ER_PRINT_PRESCRIPTION code="150004">Print prescription failure</ER_PRINT_PRESCRIPTION>
+  <ER_PRESCRIPTION_ID code="150005">Failure by prescription number is printed on prescription</ER_PRESCRIPTION_ID>
+  <ER_PRINT_HETEROMORPHISM code="150006">Print Alien failed drug information</ER_PRINT_HETEROMORPHISM>
+  <ER_NO_PAPER code="150007">Thermal Printer Paper Out</ER_NO_PAPER>
+  <ER_LESS_PAPER code="150008">Thermal printer paper will out</ER_LESS_PAPER>
+  <ER_CUT code="150009">Thermal Printer Cutter error</ER_CUT>
+  <ER_HOT code="150010">Thermal printer thermal head temperature is too high</ER_HOT>
+  <ER_NO_BASKET_NUMBER code="150011">No input basket number</ER_NO_BASKET_NUMBER>
+
+  <!--CThermalPrinterStar-->
+  <WN_NOT_OPEN_PORT code="151003">The printer port is not open</WN_NOT_OPEN_PORT>
+  <ER_PRINT code="151004">Print failure</ER_PRINT>
+  <ER_GET_PRINTER_STATE code="151005">Failure to obtain the printer status</ER_GET_PRINTER_STATE>
+  <ER_SEND_COMMAND code="151006">Send printer command failed</ER_SEND_COMMAND>
+
+  <!--CPortManage-->
+  <ER_PORT_NUM code="159001">Reader port number is wrong</ER_PORT_NUM>
+  <ER_OPEN_PORT code="159002">Reader port open failed</ER_OPEN_PORT>
+  <ER_WRITE_DATA code="159003">Reader port write data failed</ER_WRITE_DATA>
+  <ER_READ_DATA code="159004">Read port data failed</ER_READ_DATA>
+  <ER_NOT_OPEN_PORT code="159005">Reader port is not open</ER_NOT_OPEN_PORT>
+  <ER_CREATE_LISTEN_THREAD code="159006">Create reader listener thread fails</ER_CREATE_LISTEN_THREAD>
+  
+  <!--PLC模块返回错误类型-->
+  <ER_MEDICINE_POSITION code="160001">Drug information wrong location</ER_MEDICINE_POSITION>
+  <ER_MEDICINE_COUNT code="160002">Drugs number of errors</ER_MEDICINE_COUNT>
+  <ER_SUSPEND_LISTEN_THREAD code="160003">Termination device status listener thread fails</ER_SUSPEND_LISTEN_THREAD>
+  <ER_CLOSE_LISTEN_THREAD code="160004">Turn off the device status listener thread handles failure</ER_CLOSE_LISTEN_THREAD>
+  <ER_NO_PLC code="160005">No PLC examples</ER_NO_PLC>
+  <ER_NOT_OPEN_PLC code="160006">PLC connection is not open</ER_NOT_OPEN_PLC>
+  
+  <!--CPLCMitsubishi-->
+  <ER_CREATE_INSTANCE code="162001">Create a COM object failed</ER_CREATE_INSTANCE>
+  <ER_SET_CPUTYPE code="162002">Setting CPU type failure</ER_SET_CPUTYPE>
+  <ER_SET_HOST_ADDRESS code="162003">Set the host address failed</ER_SET_HOST_ADDRESS>
+  <ER_SET_STATION_NUMBER code="162004">Set Station failure</ER_SET_STATION_NUMBER>
+  <ER_OPEN code="162005">Open a connection error</ER_OPEN>
+  <ER_CLOSE code="162006">Close connection error</ER_CLOSE>
+  <ER_NO_DEVICENAME code="162007">No input device name</ER_NO_DEVICENAME>
+  <ER_READ_DEVICE code="162008">Read address value PLC error</ER_READ_DEVICE>
+  <ER_WRITE_DEVICE code="162009">Write address value PLC error</ER_WRITE_DEVICE>
+  <ER_READ_DEVICE_BLOCK code="162010">PLC address block values read error</ER_READ_DEVICE_BLOCK>
+  <ER_WRITE_DEVICE_BLOCK code="162011">PLC address block value write error</ER_WRITE_DEVICE_BLOCK>
+  <ER_NO_INSTANCE code="162012">plcComponent instance is empty</ER_NO_INSTANCE>
+  <ER_PLC_CONNECTION code="162013">PLC connection status error</ER_PLC_CONNECTION>
+  
+  <FILLLIST_EMPTY code="170001">Dosing queue is empty</FILLLIST_EMPTY>
+  
+  <FAILED_TO_CREATE_THREAD code="180001">Failed to create a thread</FAILED_TO_CREATE_THREAD>
+  <FAILED_TO_RESUME_THREAD code="180002">Failure recovery thread</FAILED_TO_RESUME_THREAD>
+  <FAILED_TO_SUSPEND_THREAD code="180003">Interrupt thread failure</FAILED_TO_SUSPEND_THREAD>
+  <FAILED_TO_CLOSE_HANDLE code="180004">Close thread failure</FAILED_TO_CLOSE_HANDLE>
+  <NOT_ENOUGH_MEDICINE code="180005">Drug stocks is not enough</NOT_ENOUGH_MEDICINE>
+  <CAN_NOT_FIND_NORMAL_ID code="180006">Can not find the normal queue prescription ID</CAN_NOT_FIND_NORMAL_ID>
+  <CAN_NOT_FIND_ABNORMAL_ID code="180007">Exception queue can not find the prescription I</CAN_NOT_FIND_ABNORMAL_ID>
+  <READ_BASKET_OVER_TIME code="180008">After reading the basket timeout exception, recover restart the software</READ_BASKET_OVER_TIME>
+  <READ_BASKET_ERROR code="180009">Read abnormal basket. Please continue to send drug recovery</READ_BASKET_ERROR>
+  <MACHINE_DISABLE code="180010">The device has been deactivated</MACHINE_DISABLE>
+  <MACHINE_FETAL_ERROR code="180011">The underlying system failure, pause and medicine</MACHINE_FETAL_ERROR>
+  <NO_FIT_PRESCRIPTION code="180013">Prescription records matching was not found</NO_FIT_PRESCRIPTION>
+   
+  <!--监控系统类返回错误类型-->
+  <ERROR_Monitor_CreatThead code="230001">Create a device failure monitor thread</ERROR_Monitor_CreatThead>
+  <ERROE_Monitor_GetCameraState code="230002">Connect the camcorder to fail</ERROE_Monitor_GetCameraState>
+  <ERROE_Monitor_GetScannerState code="230003">Connect the scanner to fail</ERROE_Monitor_GetScannerState>
+  <ERROE_Monitor_GetPLCState code="230004">PLC connection failure</ERROE_Monitor_GetPLCState>
+  <ERROE_Monitor_GetPrintState code="230005">Failure to connect the printer</ERROE_Monitor_GetPrintState>
+  
+  <!--批量导入返回错误类型-->
+  <ERROR_Import_Medicine code="240001">Bulk import of drugs fail</ERROR_Import_Medicine>
+  <ERROR_Import_Prescription code="240002">Bulk import prescription failure</ERROR_Import_Prescription>
+</Error>

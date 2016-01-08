@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="gbk"?>
+<UI>
+  <!--UI_文字信息-->
+  <!--Tips-->
+  <Restart_Program>是否确认重启系统?</Restart_Program>
+  <Restart_Tips>重启系统</Restart_Tips>
+  <Exit_Program>是否确认退出系统?</Exit_Program>
+  <Exit_Tips>退出系统</Exit_Tips>
+  <Warning_Tips>警告</Warning_Tips>
+  <Tips>提示</Tips>
+  <Complete>完成</Complete>
+  <ConfigEnd_Restart>设置完成,重启软件生效</ConfigEnd_Restart>
+
+  <!--Message-->
+  <PLC_Failed>打开PLC串口失败，请重试!</PLC_Failed>
+  <Bar_code_scanner>打开条码扫描器的串口失败，请重试!</Bar_code_scanner>
+  <LED>打开数码显示管的串口失败，请重试!</LED>
+  <Turn_off_LED>熄灭数码显示管失败!</Turn_off_LED>
+  <Turn_on_LED>数码显示管点灯失败!</Turn_on_LED>
+  <Printer>打开热敏打印机的串口失败，请重试!</Printer>
+  <Card_reader>打开读卡器的串口失败，请重试!</Card_reader>
+  <Send_scanner>向扫描器发送连续扫描的命令失败!</Send_scanner>
+  <Send_scanner_stop>向扫描器发送停止扫描的命令失败!</Send_scanner_stop>
+  <Send_PLC>向PLC发送显示屏切换的命令失败!</Send_PLC>  
+  <Send_PLC_go>向PLC发送走斗命令失败!</Send_PLC_go>
+  <Send_PLC_go_floor>向PLC发送走层命令失败!</Send_PLC_go_floor>
+  <Send_PLC_Failed>向PLC发送---熄灭“硬确认”按钮的指示灯---命令失败!</Send_PLC_Failed>
+  <Send_PLC_Failed_turn_off>熄灭“硬确认”按钮的指示灯失败.</Send_PLC_Failed_turn_off>
+  <Send_PLC_Door>向PLC发送--打开门--命令失败!</Send_PLC_Door>
+  <Send_PLC_Door_Close>向PLC发送--关闭门--命令失败!</Send_PLC_Door_Close>
+  <Send_Door_state>向PLC发送获取门开闭状态命令失败</Send_Door_state>
+  <Door_Opening>请稍后，正在开门...</Door_Opening>
+  <Door_Opening_again>打开门失败，请重试</Door_Opening_again>
+  <Door_Closeing>请后，正在关门...</Door_Closeing>
+  <Door_Closeing_again>关闭门失败，请重试</Door_Closeing_again>
+  <Door_Open_Failed>门打开失败.</Door_Open_Failed>
+  <Door_Close_Failed>门关闭失败.</Door_Close_Failed>
+  <Door_Open_Success>门打开成功.</Door_Open_Success>
+  <Door_Close_Success>门关闭成功.</Door_Close_Success>
+  <Front_Door_Open_Failed>前门打开失败.</Front_Door_Open_Failed>
+  <Front_Door_Close_Failed>前门关闭失败.</Front_Door_Close_Failed>
+  <Behind_Door_Open_Failed>后门打开失败.</Behind_Door_Open_Failed>
+  <Behind_Door_Close_Failed>后门关闭失败.</Behind_Door_Close_Failed>
+  <System_run>系统正常运行</System_run>
+  <Scanner_Failed>条码扫描线程失败!</Scanner_Failed>
+  <Card_thread>读卡器线程失败!</Card_thread>
+  <No_use>未上架</No_use>
+  <Beyond_border>位置ID越界</Beyond_border>	
+  <Lattice_2>柜 2 第 </Lattice_2>
+  <Lattice_1>柜 1 第 </Lattice_1>		
+  <Layer> 层 </Layer>
+  <Groove> 槽</Groove>
+  <List_Lack_of_Med>本批柜内缺药清单</List_Lack_of_Med>
+  <Medicine_name>药品名称</Medicine_name>
+  <Unit>规格</Unit>
+  <Lack_num>缺量</Lack_num>
+  <Position>位置</Position>
+  <Wrong_Position>错位</Wrong_Position>
+  <Open_printer_Failed>打开热敏打印机串口%d失败</Open_printer_Failed>
+  <DB_Wrong_operation>数据库操作有误</DB_Wrong_operation>
+  <DB_Wrong_Modify>修改当前数量时，数据库操作有误</DB_Wrong_Modify>
+  <DB_Wrong_Bind>绑定位置时，数据库操作出错了</DB_Wrong_Bind>
+  <DB_Wrong_Debind>解除位置时，数据库操作出错了</DB_Wrong_Debind>
+  <Num_first>请先输入一个加药数量值，再进行加药操作.</Num_first>
+  <Adjust_num>加药数量 > 需加数量，请重新输入合适的加药数量值.</Adjust_num>  
+  <Added_num>加药后的当前数量 > 最大容量，请重新输入一个合适的数值.</Added_num>
+  <Get_num>取药数量 > 当前数量，请重新输入一个合适的数值.</Get_num>
+  <Right_choise>请先选择上相应的记录，再进行加药操作</Right_choise>
+  <Right_choise_get>请先选择上相应的记录，再进行取药操作</Right_choise_get>
+  <Right_choise_go>请先选择上相应的记录，再进行走层</Right_choise_go>
+  <Server_A>A伺服运行异常</Server_A>
+  <Server_B>B伺服运行异常</Server_B>
+  <Server_A_go>伺服A走层失败，请重试</Server_A_go>
+  <Server_B_go>伺服B走层失败，请重试</Server_B_go>
+  <Left_saver>左侧安全光幕异常</Left_saver>
+  <Ringht_saver>右侧安全光幕异常</Ringht_saver>
+  <Front_saver>左侧 安全光幕异常</Front_saver>
+  <Behind_saver>右侧 安全光幕异常</Behind_saver>
+  <Left_reversal_failed_again>左柜原点回归操作失败，请重试!</Left_reversal_failed_again>
+  <Error_saving>存取操作时，走斗失败.</Error_saving>
+  <OK_saving>存取操作时，走斗成功.</OK_saving>
+  <Check_Med_Error>查询该药品是否存在时出错了</Check_Med_Error>
+  <Check_Med_Error_2>查询药品信息出错了</Check_Med_Error_2>
+  <Check_Med_bar>查询该条码对应的药品是否存在时出错!</Check_Med_bar>
+  <Add_Med_In>该药品在缺药列表中，请加药!</Add_Med_In>
+  <No_need_add>该药品未在缺药列表中，尚未缺药!</No_need_add>
+  <No_Med>在数据库中查找不到该药品，请重新核对!</No_Med>
+  <No_Med_again>此药品在药品数据库不存在，请重新输入关键字</No_Med_again>
+  <Be_right>药品名字过于模糊，请继续输入关键字，以便精确查找!</Be_right>
+  <Find_success>模糊查找该药品成功!</Find_success>
+  <Med_save_success>药品存取操作完成</Med_save_success>
+  <Layering>请稍后，正在走层...</Layering>
+  <Layer_success>走层成功</Layer_success>
+  <Error_saving_again>存取操作，走层失败，请重试</Error_saving_again>
+  <Error_step_again>走层失败，请重试!</Error_step_again>
+  <Printer_Failed>打印失败，</Printer_Failed>
+  <Try_again>，请重试!</Try_again>
+  <Make_Sure_A>/存取操作硬确认完成------A伺服</Make_Sure_A>
+  <Make_Sure_B>/存取操作硬确认完成------B伺服</Make_Sure_B>
+  <No_empty>绝对位置不能为空，请重新输入数字值.</No_empty>
+  <Modify_PLC_Failed>修改PLC定值配置失败!</Modify_PLC_Failed>
+  <Modify_PLC_Success>修改PLC定值配置成功!</Modify_PLC_Success>
+  <Send_bee_close>发送关闭蜂鸣器命令失败.</Send_bee_close>
+  <Send_bee_open>发送打开蜂鸣器命令失败.</Send_bee_open>
+  <Back_to_original>正在原点回归，请稍后...</Back_to_original>
+  <Back_to_original_Success>原点回归，操作成功</Back_to_original_Success>
+  <Back_to_original_Failed_A>A柜原点回归失败，请重试</Back_to_original_Failed_A>
+  <Back_to_original_Failed_B>B柜原点回归失败，请重试</Back_to_original_Failed_B>
+  <No_empty_pre>处方ID不能为空，请输入一个有效的处方ID!</No_empty_pre>
+  <Pre_query_error>查询处方出错了</Pre_query_error>
+  <Pre_query_success>处方查询成功</Pre_query_success>
+  <Pre_query_failed_again>该处方查询失败，请重新核对处方ID!</Pre_query_failed_again>
+  <Lattice_go_failed>走斗失败------纯粹走斗</Lattice_go_failed>
+  <Lattice_go_success>走斗成功------纯粹走斗</Lattice_go_success>
+  <Lattice_success>走斗成功完成</Lattice_success>
+  <Pre_failed_again>对应的处方ID不存在，请重试!</Pre_failed_again>
+  <Med_end_A>A柜中药品全部取完了!</Med_end_A>
+  <Med_end_B>B柜中药品全部取完了!</Med_end_B>
+  <All_Med_right>该处方取药全部成功完成!</All_Med_right>
+  <Getting_med>取药中,等确认</Getting_med>
+  <Get_Success>取当前行对应的位置上的药成功</Get_Success>
+  <Not_on_state>此药品尚未上架智能存取柜，是否上架请酌情考虑!</Not_on_state>
+  <Find_bar_success>目标条码的药品，查询成功!</Find_bar_success>
+  <Select_right_note>请选择上相应的记录</Select_right_note>
+  <Warning_empty>新的告警阈值数值为空，请输入一个数值!</Warning_empty>
+  <Max_empty>新的最大容量数值为空，请输入一个数值!</Max_empty>
+  <Add_num_empty>加药数量为空，请输入一个数值!</Add_num_empty>
+  <Get_num_empty>取药数量为空，请输入一个数值!</Get_num_empty>
+  <Add_num_empty_0>加药数量不能为0，请输入一个数值!</Add_num_empty_0>
+  <Get_num_empty_0>取药数量不能为0，请输入一个数值!</Get_num_empty_0>
+  <Warning_area>新的告警阈值越界，取值范围为[1,</Warning_area>
+  <Max_area>新的最大容量值 > 当前数量，请重新输入一个合适的值!</Max_area> 
+  <Max_area_2>新的最大容量取值越界，取值范围为[1, 99]</Max_area_2>
+  <Modify_Warning_Success>修改告警阈值成功!</Modify_Warning_Success>
+  <Modify_Max_Success>修改最大容量成功!</Modify_Max_Success>
+  <Select_right_position>请先选择好位置，再进行告警阈值修改</Select_right_position>
+  <Select_right_position_max>请先选择好位置，再进行最大容量修改</Select_right_position_max>
+  <Add_Med_success>加药操作成功完成</Add_Med_success>
+  <Get_Med_success>取药操作成功完成</Get_Med_success>
+  <Choose_free_position>请先选择上空闲的位置</Choose_free_position>
+  <Choose_free_bind>请先选择好空闲的位置，再进行绑定</Choose_free_bind>
+  <Position_change_error>位置转换出错了</Position_change_error>
+  <No_Med_bind>该药品不存在，无法绑定位置</No_Med_bind>
+  <Bind_succsee>绑定新的药槽成功!</Bind_succsee>
+  <Debind_succsee>解除指定药槽成功!</Debind_succsee>
+  <Debind_0>请确定该药槽的当前药数为0时，才能解除药品药槽绑定关系.</Debind_0>
+  <Select_Debind>请先选择好已绑定的位置，再进行解除</Select_Debind>
+
+  <!--UIinformaiton-->
+  <Med_ID>药品ID</Med_ID>
+  <Current_num>当前量</Current_num>
+  <Heter_num>拆零数量</Heter_num>
+  <Max_num>最大量</Max_num>
+  <Add_num>需加量</Add_num>
+  <Warning_percent>告警阈值</Warning_percent>
+  <MED_UNIT>单位</MED_UNIT>
+  <VALID_TIME>有效期</VALID_TIME>
+  <MED_BATCH>批号</MED_BATCH>
+  <Factory>厂家</Factory>
+  <Setting>设置</Setting>
+  <Get_Med_num>取药量</Get_Med_num>
+  <Get_Med_state>取药状态</Get_Med_state>
+  <Database>数据库</Database>
+  <Prescription_ID>HIS处方号:</Prescription_ID>
+  <Basket_ID>篮子号:</Basket_ID>
+  <Window_PLC>窗口PLC</Window_PLC>
+  <Hot_immediately_printer>热敏打印机</Hot_immediately_printer>
+  <Card_Reader_device>读卡器</Card_Reader_device>
+  <LED_device>数码显示管</LED_device>
+  <Bar_code_scanner_device>条码扫描器</Bar_code_scanner_device>
+  <No_send_med>尚未发药</No_send_med>
+  <Device>设备</Device>
+  <State>状态</State>
+  <Server_A_device>伺服A</Server_A_device>
+  <Server_B_device>伺服B</Server_B_device>
+  <State_OK>正常</State_OK>
+  <State_NO>异常</State_NO>
+  <Light_saveA>安全光栅A</Light_saveA>
+  <Light_saveB>安全光栅B</Light_saveB>
+
+  <DESC_BY_CURNUM>当前量降序</DESC_BY_CURNUM>
+  <AESC_BY_CURNUM>当前量升序</AESC_BY_CURNUM>
+  <DESC_BY_VALID>有效期降序</DESC_BY_VALID>
+  <AESC_BY_VALID>有效期升序</AESC_BY_VALID>
+  <DESC_BY_LOC>地址降序</DESC_BY_LOC>
+  <AESC_BY_LOC>地址升序</AESC_BY_LOC>
+
+  <BARCODE_TIP>请输入一个正确的条码</BARCODE_TIP>
+  <MODIFY_BORCODE_FALID>修改条码失败</MODIFY_BORCODE_FALID>
+  <MODIFY_BORCODE_SUCCESS>修改条码成功</MODIFY_BORCODE_SUCCESS>
+
+  <V_MED_NAME>药品名称</V_MED_NAME>
+  <V_MED_UNIT>药品规格</V_MED_UNIT>
+  <V_MED_FACTORY>药品厂家</V_MED_FACTORY>
+  <V_MED_POS>药品位置</V_MED_POS>
+  <V_MED_BATCH>药品批号</V_MED_BATCH>
+  <V_MED_VALID>药品有效期</V_MED_VALID>
+  <V_MED_NUM>加药数量</V_MED_NUM>
+  <V_MED_BARCODE>条码</V_MED_BARCODE>
+
+  <!--IDD_ABOUTBOX-->
+  <About>关于 LK_ISS</About>
+  <IDD_ABOUTBOX_IDC_STATIC1>LK_ISS 1.0 版</IDD_ABOUTBOX_IDC_STATIC1>
+  <IDD_ABOUTBOX_IDC_STATIC2>版权所有 (C) 2013</IDD_ABOUTBOX_IDC_STATIC2>
+  <IDD_ABOUTBOX_IDOK>确定</IDD_ABOUTBOX_IDOK>
+
+  <!--IDD_DIALOG_ADD_BATCH-->
+  <IDC_STATIC_IDD_DIALOG_ADD_BATCH_1>缺药药品存储状态信息</IDC_STATIC_IDD_DIALOG_ADD_BATCH_1>
+  <IDC_STATIC_IDD_DIALOG_ADD_BATCH_2>加药数量:</IDC_STATIC_IDD_DIALOG_ADD_BATCH_2>
+
+  <!--IDD_DIALOG_ADJUST-->
+  <IDC_STATIC_GRP_BOX_DOOR_SELECT>门向选择</IDC_STATIC_GRP_BOX_DOOR_SELECT>
+  <IDC_STATIC_GRP_BOX_CHEST_SELECT>选择柜号</IDC_STATIC_GRP_BOX_CHEST_SELECT>
+  <IDC_STATIC_GRP_BOX_TIER_SELECT_ADJUST_DLG>选择走层单元</IDC_STATIC_GRP_BOX_TIER_SELECT_ADJUST_DLG>
+  <IDC_STATIC_GRP_BOX_UPDATE_ABS_SPOT_ADJUST_DLG>修改绝对位置</IDC_STATIC_GRP_BOX_UPDATE_ABS_SPOT_ADJUST_DLG>
+  <IDC_STATIC_ABS_SPOT_ADJUST_DLG>绝对位置:</IDC_STATIC_ABS_SPOT_ADJUST_DLG>
+  <IDC_STATIC_STATE_INFO_ADJUST_DLG>系统运行信息提示</IDC_STATIC_STATE_INFO_ADJUST_DLG>
+
+  <!--IDD_DIALOG_DIGIT_KEY_BOARD-->
+  <IDC_BTN_ENTER_DKB_DLG>确定</IDC_BTN_ENTER_DKB_DLG>
+  <IDC_BTN_CANCEL_DKB_DLG>取消</IDC_BTN_CANCEL_DKB_DLG>
+
+  <!--IDD_DIALOG_FETCH-->
+  <IDC_STATIC_PRE_BASE_INFO>处方信息</IDC_STATIC_PRE_BASE_INFO>
+  <IDC_STATIC_MZ_NO>门诊号:</IDC_STATIC_MZ_NO>
+  <IDC_STATIC_DEPARTMENT_NAME>科室:</IDC_STATIC_DEPARTMENT_NAME>
+  <IDC_STATIC_WINDOW_ID>窗口号:</IDC_STATIC_WINDOW_ID>
+  <IDC_STATIC_PATIENT_NAME>姓名:</IDC_STATIC_PATIENT_NAME>
+  <IDC_STATIC_PATIENT_AGE>年龄:</IDC_STATIC_PATIENT_AGE>
+  <IDC_STATIC_PATIENT_SEX>性别:</IDC_STATIC_PATIENT_SEX>
+  <IDC_STATIC_CHEST_A_PRE_MED_INFO_LIST>A柜药品信息列表</IDC_STATIC_CHEST_A_PRE_MED_INFO_LIST>
+  <IDC_STATIC_CHEST_B_PRE_MED_INFO_LIST>B柜药品信息列表</IDC_STATIC_CHEST_B_PRE_MED_INFO_LIST>
+
+
+  <!--IDD_DIALOG_KEY_BOARD-->
+  <IDC_BTN_UP_KB_DLG>上</IDC_BTN_UP_KB_DLG>
+  <IDC_BTN_LEFT_KB_DLG>左</IDC_BTN_LEFT_KB_DLG>
+  <IDC_BTN_DOWN_KB_DLG>下</IDC_BTN_DOWN_KB_DLG>
+  <IDC_BTN_RIGHT_KB_DLG>右</IDC_BTN_RIGHT_KB_DLG>
+  <IDC_BTN_EXIT_KB_DLG>关闭</IDC_BTN_EXIT_KB_DLG>
+
+  <!--IDD_DIALOG_MED_MAN-->
+  <IDC_STATIC_MED_NAME_MED_MAN_DLG>药品名称:</IDC_STATIC_MED_NAME_MED_MAN_DLG>
+  <IDC_STATIC_MED_BARCODE_MED_MAN_DLG>药品条码:</IDC_STATIC_MED_BARCODE_MED_MAN_DLG>
+  <IDC_STATIC_MED_LOC_INFO>该药品已绑定的位置信息</IDC_STATIC_MED_LOC_INFO>
+  <IDC_STATIC_ADD_LOC_MED_MAN_DLG>绑定新增位置</IDC_STATIC_ADD_LOC_MED_MAN_DLG>
+  <IDC_STATIC_LOC_MED_MAN_DLG>位置:</IDC_STATIC_LOC_MED_MAN_DLG>
+  <IDC_STATIC_STORAGE_RETRIEVAL_MED_MAN_DLG>存取操作</IDC_STATIC_STORAGE_RETRIEVAL_MED_MAN_DLG>
+  <IDC_STATIC_INC_NUM_MED_MAN_DLG>加药数量:</IDC_STATIC_INC_NUM_MED_MAN_DLG>
+  <IDC_STATIC_DEC_NUM_MED_MAN_DLG>取药数量:</IDC_STATIC_DEC_NUM_MED_MAN_DLG>
+  <IDC_STATIC_UPDATE_MED_MAN_DLG>修改配置</IDC_STATIC_UPDATE_MED_MAN_DLG>
+  <IDC_STATIC_NEW_WARN_MED_MAN_DLG>告警阈值:</IDC_STATIC_NEW_WARN_MED_MAN_DLG>
+  <IDC_STATIC_MAX_CAPACITY_MED_MAN_DLG>最大容量:</IDC_STATIC_MAX_CAPACITY_MED_MAN_DLG>
+
+  <!--IDD_DIALOG_SET_BARCODE_SCANNER-->
+  <IDC_GRP_BOX_BARCODE_SCANNER>条码扫描器参数设置</IDC_GRP_BOX_BARCODE_SCANNER>
+  <IDD_DIALOG_SET_BARCODE_SCANNER_IDC_STATIC1>端口号:</IDD_DIALOG_SET_BARCODE_SCANNER_IDC_STATIC1>
+  <IDD_DIALOG_SET_BARCODE_SCANNER_IDC_STATIC2>波特率:</IDD_DIALOG_SET_BARCODE_SCANNER_IDC_STATIC2>
+
+  <!--IDD_DIALOG_SET_CARD_READER-->
+  <IDC_GRP_BOX_CARD_READER>读卡器参数设置</IDC_GRP_BOX_CARD_READER>
+  <IDD_DIALOG_SET_CARD_READER_IDC_STATIC1>端口号:</IDD_DIALOG_SET_CARD_READER_IDC_STATIC1>
+  <IDD_DIALOG_SET_CARD_READER_IDC_STATIC2>波特率:</IDD_DIALOG_SET_CARD_READER_IDC_STATIC2>
+
+  <!--IDD_DIALOG_SET_DB-->
+  <IDC_GRP_BOX_SET_DB>数据库参数设置</IDC_GRP_BOX_SET_DB>
+  <IDD_DIALOG_SET_DB_IDC_STATIC1>服务器IP:</IDD_DIALOG_SET_DB_IDC_STATIC1>
+  <IDD_DIALOG_SET_DB_IDC_STATIC2>用户名:</IDD_DIALOG_SET_DB_IDC_STATIC2>
+  <IDD_DIALOG_SET_DB_IDC_STATIC3>密码:</IDD_DIALOG_SET_DB_IDC_STATIC3>
+  <IDD_DIALOG_SET_DB_IDC_STATIC4>数据库名:</IDD_DIALOG_SET_DB_IDC_STATIC4>
+  <IDD_DIALOG_SET_DB_IDC_STATIC5>端口号:</IDD_DIALOG_SET_DB_IDC_STATIC5>
+  <IDD_DIALOG_SET_DB_IDC_STATIC6>字符集:</IDD_DIALOG_SET_DB_IDC_STATIC6>
+
+  <!--IDD_DIALOG_SET_LAMP-->
+  <IDC_GRP_BOX_LAMP>数码显示管参数设置</IDC_GRP_BOX_LAMP>
+  <IDD_DIALOG_SET_LAMP_IDC_STATIC1>端口号:</IDD_DIALOG_SET_LAMP_IDC_STATIC1>
+  <IDD_DIALOG_SET_LAMP_IDC_STATIC2>波特率:</IDD_DIALOG_SET_LAMP_IDC_STATIC2>
+
+  <!--IDD_DIALOG_SET_PLC-->
+  <IDC_GRP_BOX_PLCPLC>参数设置</IDC_GRP_BOX_PLCPLC>
+  <IDD_DIALOG_SET_PLC_IDC_STATIC>串口端口号:</IDD_DIALOG_SET_PLC_IDC_STATIC>
+
+  <!--IDD_DIALOG_SET_THERMAL_PRINTER-->
+  <IDC_GRP_BOX_THERMAL_PRINTER_SET>热敏打印机参数设置</IDC_GRP_BOX_THERMAL_PRINTER_SET>
+  <IDD_DIALOG_SET_THERMAL_PRINTER_IDC_STATIC1>端口号:</IDD_DIALOG_SET_THERMAL_PRINTER_IDC_STATIC1>
+  <IDD_DIALOG_SET_THERMAL_PRINTER_IDC_STATIC2>波特率:</IDD_DIALOG_SET_THERMAL_PRINTER_IDC_STATIC2>
+
+
+
+	
+  <!--Menu_文字信息-->
+  <IDR_MAINMENU_0>操作</IDR_MAINMENU_0>
+  <IDR_MAINMENU_1>系统</IDR_MAINMENU_1>
+  <IDR_MAINMENU_2>关于</IDR_MAINMENU_2> 
+  <!--Sub_Menu_文字信息-->
+  <IDR_MAINMENU_Sub_Menu_0_0>校正</IDR_MAINMENU_Sub_Menu_0_0>
+  <IDR_MAINMENU_Sub_Menu_0_1>药品管理</IDR_MAINMENU_Sub_Menu_0_1>
+  <IDR_MAINMENU_Sub_Menu_0_2>处方取药</IDR_MAINMENU_Sub_Menu_0_2>
+  <IDR_MAINMENU_Sub_Menu_0_3>批量加药</IDR_MAINMENU_Sub_Menu_0_3>
+  <IDR_MAINMENU_Sub_Menu_1_0>系统设置</IDR_MAINMENU_Sub_Menu_1_0>
+  <IDR_MAINMENU_Sub_Menu_1_1>系统重启</IDR_MAINMENU_Sub_Menu_1_1>
+  <IDR_MAINMENU_Sub_Menu_1_2>系统退出</IDR_MAINMENU_Sub_Menu_1_2>
+  <IDR_MAINMENU_Sub_Menu_2_0>版本</IDR_MAINMENU_Sub_Menu_2_0>
+
+</UI>

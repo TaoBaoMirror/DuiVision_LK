@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dlg name="dlg_main" title="[APP_NAME]" width="1024" height="768" translucent="255"
+	frame="skin:IDB_MAIN_FRAME" bkimg="" crbk="000000" appwin="1" resize="1"
+	width-lt="3" height-lt="119" width-rb="3" height-rb="30" >
+
+  <base>
+	<imgbtn name="button.close" pos="-45,0,-0,29" skin="IDB_BT_CLOSE" tip="关闭" action="close-window" show="1"/>
+	<imgbtn name="button.min" pos="-76,0,-46,29" skin="IDB_BT_MIN" tip="最小化" />
+	<imgbtn name="button.skin" pos="-110,0,-81,29" skin="IDB_BT_SKIN" tip="皮肤" show="1"/>
+	
+	<img name="image" pos="10,4" width="25" height="25" image="skins\icon\logo_men.png" mode="normal" framesize="1" show="1" mode="extrude"/>
+	
+	<text name="title" crtext="FFFFFF" crmark="800000" crshadow="808080" font="bigbig"
+			pos="40,4,350,30" title="[APP_NAME]" response="0" show="1" />
+	<text name="user.current" crtext="FFFFFF" crmark="800000" align="right"
+			pos="-220,4,-155,30" title="test" tip="登录用户：test" show="1" />
+	<textbtn name="textbtn" skin="" crtext="FFFFFF"
+			pos="-150,4,-111,25" show="1" title="[LOGIN]" action="dlg:dlg_login" />
+			
+	<flash name="flash_ctrl_main" show="1" response="0" 
+			transparent="100"
+			url="flash\flash晚星.swf"
+			pos="0,0,-0,300" >
+	</flash>
+  </base>
+  
+  <body>
+	
+	<tabctrl name="tabctrl.main" image="skins\tab_image.png" img-count="3"
+			img-sep="" img-hover="skin:IDB_TAB_HOVER"
+			font="bold" item-width="0" tab-height="0" animate="1"
+			pos="1,44,-1,-31">
+		<tab name="tab.CDuiPrescriptionHandler" title="处方取药" image="skins\icon\app.png" img-count="1"
+			div="tab_CDuiPrescriptionHandler" active="true" font="bigbig " >
+			
+		</tab>
+		<tab name="tab.CDuiFillMedHandler" title="批量加药" image="skins\icon\ico_check.png" img-count="1"
+			div="tab_CDuiFillMedHandler" font="bigbig">		
+		</tab>
+		<tab name="tab.CDuiMedManagerHandler" title="药品管理" image="skins\icon\ico_message.png" img-count="1"
+			div="tab_CDuiMedManagerHandler" font="bigbig">
+			
+		</tab>
+		<tab name="tab.CDuiListenHandler" title="监控" image="skins\icon\ico_diannaomenzhen.png" img-count="1"
+			div="tab_CDuiListenHandler" font="bigbig">		
+		</tab>
+		<tab name="tab.CDuiSysSetHandler" title="设置" image="skins\icon\ico_Tool.png" img-count="1"
+			div="tab_CDuiSysSetHandler" font="bigbig">		
+		</tab>
+		<tab name="tab.CDuiTestHandler" title="测试" image="skins\icon\arp_install.png" img-count="1"
+			div="tab_CDuiTestHandler" font="bigbig">			
+		</tab>
+	</tabctrl>
+	
+	<div name="footer" pos="0,-26,-0,-0" >	
+		<img name="image" pos="10,1,36,-0" skin="IDB_TRAY_ICON" mode="mid" framesize="1" show="1" />
+		<hidebtn name="checkversion" pos="40,2,-100,-0" show="1" text="深圳国控医疗有限公司    版本：1.0.0.1" title="检查更新"
+				action="link:http://www.kokoonmed.com/" />
+		
+	</div>	
+	
+  </body>
+  
+</dlg>

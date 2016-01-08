@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AF632201-9CB4-406E-8965-46908B223DAC}</ProjectGuid>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseOfAtl>false</UseOfAtl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseOfAtl>false</UseOfAtl>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)bin\</OutDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)bin</OutDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>..\DuiVision\include;..\DuiVision\common;.\;extern\;extern\serial;extern\mysql;extern\tinyxml;extern\rfid;extern\fxcpu;utils\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;STRICT;_DEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(outdir)/DuiVision_LKd.exe</OutputFile>
+      <AdditionalLibraryDirectories>../Lib;../DuiVision/third-part/wke;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>DuiVision.2010d.lib;wke.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>WinMainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>..\DuiVision\include;..\DuiVision\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;STRICT;NDEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(outdir)/DuiVision_LK.exe</OutputFile>
+      <AdditionalLibraryDirectories>../Lib;../DuiVision/third-part/wke;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>DuiVision.2010.lib;wke.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\bin\xml\app\tab_CDuiFillMedHandler.xml" />
+    <None Include="..\bin\xml\app\tab_CDuiListenHandler.xml" />
+    <None Include="..\bin\xml\app\tab_CDuiMedManagerHandler.xml" />
+    <None Include="..\bin\xml\app\tab_CDuiPrescriptionHandler.xml" />
+    <None Include="..\bin\xml\app\tab_CDuiSysSetHandler.xml" />
+    <None Include="Readme.txt" />
+    <None Include="res\DuiVision_LK.ico" />
+    <None Include="res\DuiVision_LK.rc2" />
+    <None Include="res\KoKoon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DuiHandlerCDuiFillMedHandler.h" />
+    <ClInclude Include="DuiHandlerCDuiListenHandler.h" />
+    <ClInclude Include="DuiHandlerCDuiMedManagerHandler.h" />
+    <ClInclude Include="DuiHandlerCDuiPrescriptionHandler.h" />
+    <ClInclude Include="DuiHandlerCDuiSysSetHandler.h" />
+    <ClInclude Include="DuiHandlerMain.h" />
+    <ClInclude Include="DuiVision_LK.h" />
+    <ClInclude Include="extern\fxcpu\actfxcpu3.h" />
+    <ClInclude Include="extern\rfid\RFIDAPIEXPORT.h" />
+    <ClInclude Include="extern\serial\Serialport.h" />
+    <ClInclude Include="extern\tinyxml\tinystr.h" />
+    <ClInclude Include="extern\tinyxml\tinyxml.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="utils\BarcodeScannerMan.h" />
+    <ClInclude Include="utils\CardReader.h" />
+    <ClInclude Include="utils\DBMysql.h" />
+    <ClInclude Include="utils\DBWrap.h" />
+    <ClInclude Include="utils\ErrorCodeRes.h" />
+    <ClInclude Include="utils\FxCpuMan.h" />
+    <ClInclude Include="utils\General.h" />
+    <ClInclude Include="utils\KoKoonDBManage.h" />
+    <ClInclude Include="utils\LampMan.h" />
+    <ClInclude Include="utils\PortManage.h" />
+    <ClInclude Include="utils\RfidMan.h" />
+    <ClInclude Include="utils\SingletonMode.h" />
+    <ClInclude Include="utils\ThermalPrinter.h" />
+    <ClInclude Include="utils\ThermalPrinterISAS.h" />
+    <ClInclude Include="utils\ThermalPrinterSPRT.h" />
+    <ClInclude Include="utils\ThermalPrinterSPRT_RME3.h" />
+    <ClInclude Include="utils\XMLConfig.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DuiHandlerCDuiFillMedHandler.cpp" />
+    <ClCompile Include="DuiHandlerCDuiListenHandler.cpp" />
+    <ClCompile Include="DuiHandlerCDuiMedManagerHandler.cpp" />
+    <ClCompile Include="DuiHandlerCDuiPrescriptionHandler.cpp" />
+    <ClCompile Include="DuiHandlerCDuiSysSetHandler.cpp" />
+    <ClCompile Include="DuiHandlerMain.cpp" />
+    <ClCompile Include="DuiVision_LK.cpp" />
+    <ClCompile Include="extern\fxcpu\actfxcpu3.cpp" />
+    <ClCompile Include="extern\serial\SerialPort.cpp" />
+    <ClCompile Include="extern\tinyxml\tinystr.cpp" />
+    <ClCompile Include="extern\tinyxml\tinyxml.cpp" />
+    <ClCompile Include="extern\tinyxml\tinyxmlerror.cpp" />
+    <ClCompile Include="extern\tinyxml\tinyxmlparser.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="utils\BarcodeScannerMan.cpp" />
+    <ClCompile Include="utils\CardReader.cpp" />
+    <ClCompile Include="utils\DBMysql.cpp" />
+    <ClCompile Include="utils\DBWrap.cpp" />
+    <ClCompile Include="utils\FxCpuMan.cpp" />
+    <ClCompile Include="utils\General.cpp" />
+    <ClCompile Include="utils\KoKoonDBManage.cpp" />
+    <ClCompile Include="utils\LampMan.cpp" />
+    <ClCompile Include="utils\PortManage.cpp" />
+    <ClCompile Include="utils\RfidMan.cpp" />
+    <ClCompile Include="utils\ThermalPrinter.cpp" />
+    <ClCompile Include="utils\ThermalPrinterISAS.cpp" />
+    <ClCompile Include="utils\ThermalPrinterSPRT.cpp" />
+    <ClCompile Include="utils\ThermalPrinterSPRT_RME3.cpp" />
+    <ClCompile Include="utils\XMLConfig.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DuiVision_LK.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

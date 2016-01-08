@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<dlg name="dlg_fillsure" title="" width="420" height="370" appwin="0" resize="0"
+	frame="" bkimg="" crbk="000000" >
+	
+	<base>
+		<imgbtn name="button.close" pos="-45,0,-0,29" skin="IDB_BT_CLOSE" show="1" shortcut="ESC" />
+		<text name="title" crtext="000000" crmark="800000" font="big"
+				pos="10,5,200,25" title="[APP_NAME]登录" mask="" response="0" show="1" />
+	</base>
+
+	<body>
+		<area name="area-1" pos="0,0,-0,30" begin-transparent="100" end-transparent="40" />
+		<area name="area-2" pos="0,30,-0,-0" begin-transparent="20" end-transparent="20" />
+		<area name="area-3" pos="0,-40,-0,-39" begin-transparent="70" end-transparent="70" />
+		<area name="area-4" pos="0,-39,-0,-0" begin-transparent="88" end-transparent="88" />
+		
+		<text name="medname" crtext="000000" crmark="800000" font="big" align="right"
+				pos="10,35,100,60" title="药品名称:" mask="" response="0" show="1" />		
+		<text name="static_medname" crtext="000000" crmark="800000" font="big"  align="left"
+				pos="110,35,400,60" title="123" mask="" response="0" show="1" />
+				
+		<text name="medunit" crtext="000000" crmark="800000" font="big" align="right"
+				pos="10,70,100,95" title="药品规格:" mask="" response="0" show="1" />		
+		<text name="static_medunit" crtext="000000" crmark="800000" font="big"  align="left"
+				pos="110,70,400,95" title="123" mask="" response="0" show="1" />
+				
+		<text name="medfactory" crtext="000000" crmark="800000" font="big" align="right"
+				pos="10,105,100,140" title="药品厂家:" mask="" response="0" show="1" />		
+		<text name="static_medfactory" crtext="000000" crmark="800000" font="big"  align="left"
+				pos="110,105,400,140" title="123" mask="" response="0" show="1" />
+				
+		<text name="medposition" crtext="000000" crmark="800000" font="big" align="right"
+				pos="10,150,100,185" title="药品位置:" mask="" response="0" show="1" />		
+		<text name="static_medname" crtext="000000" crmark="800000" font="big"  align="left"
+				pos="110,150,400,185" title="123" mask="" response="0" show="1" />
+		
+		
+		<text name="medbatch" crtext="000000" crmark="800000" font="big" align="right"
+				pos="10,195,100,230" title="药品批号:" mask="" response="0" show="1" />		
+		<edit name="edit_medbatch" skin="IDB_EDIT"  font="big"  align="left" multiline="0" autohscroll="1" autovscroll="0" number="0" readonly="0" maxchar="50"
+				pos="110,195,400,230"  />
+				
+		<text name="medvalidtime" crtext="000000" crmark="800000" font="big" align="right"
+				pos="10,240,100,275" title="药品有效期:" mask="" response="0" show="1" />		
+		<combobox name="combox_medvalidtime" skin="IDB_EDIT" small-image="skin:IDB_DROP_DOWN"
+					value="local" tip=""  
+					pos="110,240" width="290" height="35"
+					list-height="120" img-scroll="skin:IDB_SCROLL_V"
+					title="" show="1" readonly="0">
+				
+		</combobox>
+				
+		<text name="medfillnum" crtext="000000" crmark="800000" font="big" align="right"
+				pos="10,285,100,320" title="加药数量:" mask="" response="0" show="1" />		
+		<edit name="edit_medfillnum" skin="IDB_EDIT"  font="big"  align="left" multiline="0" autohscroll="1" autovscroll="0" number="1" readonly="0" maxchar="50"
+				pos="110,285,400,320" />
+				
+		
+		<button name="button.ok" skin="IDB_BT_DEFAULT" title="确认"
+				pos="20,-38,140,-2" show="1" shortcut="RETURN" />
+		
+		<button name="button.cancel" skin="IDB_BT_DEFAULT" title="取消"
+				pos="-140,-38,-20,-2" show="1" shortcut="" />
+	</body>
+  
+</dlg>

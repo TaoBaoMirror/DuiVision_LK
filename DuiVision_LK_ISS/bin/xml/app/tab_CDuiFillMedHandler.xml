@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<div pos="0,75,-0,-0" >
+	<text name="text_medname"  align="right" pos="5,15,100,35" title="药品名称:" font="default" show="1" />
+	<combobox name="fill_combobox" skin="IDB_EDIT" small-image="skin:IDB_DROP_DOWN"
+					value="local" tip="" 
+					pos="120,10" width="250" height="30"
+					list-height="320" img-scroll="skin:IDB_SCROLL_V"
+					title="" show="1" readonly="0">
+				
+	</combobox>
+	<text name="text_medname"  align="right" pos="400,15,500,35" title="药品条码:" font="default" show="1" />
+	<edit name="edit_barcode" skin="IDB_EDIT" pos="510,10" width="250" height="30" multiline="0" autohscroll="1" autovscroll="0" number="0" readonly="0" maxchar="50"
+					font="default" crtext="0,0,0" crtip="128,128,128,128" />
+	<button name="button_fill_search" skin="IDB_BT_DEFAULT" title="查询"
+				pos="780,10,880,40" show="1" shortcut="" />
+	<area name="area-1" pos="5,42,-5,43" begin-transparent="40" end-transparent="100" />
+	
+	<radiobtn name= "Radio1" title="地址降序" pos="5,45,100,60" check="true" group="listen" skin="IDB_RADIO_BUTTON"/>
+	<radiobtn name= "Radio2" title="地址升序" pos="150,45,250,60" check="false" group="listen" skin="IDB_RADIO_BUTTON"/>
+	<radiobtn name= "Radio3" title="有效期降序" pos="300,45,400,60" check="false" group="listen" skin="IDB_RADIO_BUTTON"/>
+	<radiobtn name= "Radio4" title="有效期升序" pos="450,45,550,60" check="false" group="listen" skin="IDB_RADIO_BUTTON"/>
+	<radiobtn name= "Radio5" title="当前量降序" pos="600,45,750,60" check="false" group="listen" skin="IDB_RADIO_BUTTON"/>
+	<radiobtn name= "Radio6" title="当前量升序" pos="800,45,900,60" check="false" group="listen" skin="IDB_RADIO_BUTTON"/>
+	
+	<gridctrl name="gridctrl_fillmed" pos="5,65,-140,-120" show="1"
+		img-scroll="skin:IDB_SCROLL_V" img-scrollh="skin:IDB_SCROLL_H"  img-sep="skin:IDB_LINE_RP" 
+		img-count="12" image="skin:IDB_LIST_IMG" 
+		left-pos="0" row-height="25" header-height="25" bk-transparent="10"
+		font-title="big" font="default"
+		valign="middle" down-row="0" 
+		crtext="255,64,64,64" crhover="128,0,0" crpush="0,112,235"
+		crtitle="32,32,32" crsep="200,160,160,160" crrowhover="50,128,128,128" down-row="1">
+		
+		<column title="药品ID" width="0" align="left" show="1" bkimage="skins\image\Girdhead.png"/>
+		<column title="药品名称" width="200" align="center" show="1" bkimage="skins\image\Girdhead.png"/>
+		<column title="规格" width="110" align="center" show="1" bkimage="skins\image\Girdhead.png"/>
+		<column title="当前量" width="75" align="center"  show="1" bkimage="skins\image\Girdhead.png"/>
+		<column title="需加量" width="75" align="center" show="1" bkimage="skins\image\Girdhead.png"/>
+		<column title="警告" width="0" align="left" show="1" bkimage="skins\image\Girdhead.png"/>
+		<column title="位置" width="170" align="center"  show="1" bkimage="skins\image\Girdhead.png"/>
+		<column title="单位" width="75" align="center"  show="1" bkimage="skins\image\Girdhead.png"/>
+		<column title="厂家" width="175" align="center"  show="1" bkimage="skins\image\Girdhead.png"/>
+		<column title="有效期" width="175" align="center"  show="1" bkimage="skins\image\Girdhead.png"/>
+		<column title="批号" width="75" align="center"  show="1" bkimage="skins\image\Girdhead.png"/>
+	</gridctrl>
+	
+	<button name="button_fill_dowm" skin="IDB_BT_DEFAULT" title="向下" pos="-120,170,-10,210" show="1" />	
+	<button name="button_fill_up" skin="IDB_BT_DEFAULT" title="向上" pos="-120,260,-10,300" show="1" />
+	<button name="button_fill_add" skin="IDB_BT_DEFAULT" title="加药" pos="-120,360,-10,400" show="1" />
+	
+	<text name="text_fill_medname"  align="right" pos="|-100,-110,|-5,-90" title="药品名称:" font="default" show="1" />
+	<text name="text_static_medname"  align="left" pos="|5,-110,|150,-90" title="药品名称" font="default" show="1" />
+	
+	<button name="button_fill_print" skin="IDB_BT_DEFAULT" title="打印" pos="|-300,-60,|-150,-10" show="1" />	
+	<button name="button_fill_opendoor" skin="IDB_BT_DEFAULT" title="关门" pos="|-75,-60,|75,-10" show="1" />
+	<button name="button_fill_closedoor" skin="IDB_BT_DEFAULT" title="开门" pos="|150,-60,|300,-10" show="1" />
+	
+</div>

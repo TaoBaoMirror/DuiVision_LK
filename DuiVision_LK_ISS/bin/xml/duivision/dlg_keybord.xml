@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<dlg name="dlg_keybord" title="" width="420" height="300" appwin="0" resize="1"
+	frame="" bkimg="" crbk="000000" >
+	
+	<base>
+		<imgbtn name="button.close" pos="-45,0,-0,29" skin="IDB_BT_CLOSE" show="1" shortcut="ESC" />
+		<text name="title" crtext="FFFFFF" crmark="800000" font="big"
+				pos="10,5,200,25" title="软键盘" mask="" response="0" show="1" />
+		<!-- <area name="area-1" pos="0,0,-0,30" begin-transparent="255" end-transparent="200" /> -->
+		<area name="area-2" pos="0,30,-0,-0" begin-transparent="255" end-transparent="255" />
+		<area name="area-3" pos="0,-50,-0,-49" begin-transparent="70" end-transparent="70" />
+		<area name="area-4" pos="0,-49,-0,-0" begin-transparent="100" end-transparent="100" />
+	</base>
+
+	<body>
+	</body>
+  
+</dlg>

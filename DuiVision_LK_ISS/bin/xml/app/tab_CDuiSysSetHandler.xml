@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<div pos="0,75,-0,-0" >
+	
+	<!-- <img pos="1,1,-1,30" image="skin:IDB_TAB_BACK" mode="frame" framesize="1" show="1" /> -->
+	
+	<tabctrl name="tabctrl.controls" img-sep="skin:IDB_TAB_SEPERATOR" img-hover="skin:IDB_TAB_BACK-"
+		img-tabbtn-="skins\default\btn_close.png" tabbtnpos="-21,3"
+		font="bold" item-width="90" tab-height="29"
+		crtext="800000" crhover="800000" crpush="800000" animate="1"
+		pos="1,1,-1,-90">
+		<tab name="tab.control.1" image="skin:IDB_TAB_ITEM" title="数据库" active="true" pos="0,30,-0,-0">
+      <groupbox name="GroupBox"  align="right" pos="100,80,-100,-100" image="skins\icon\logo_360.png" title="深圳国控医疗有限公司111111" crside="500000" sidewidth="1" font="default" show="1" />
+      <text name="text_dbset"  align="left" pos="160,130,260,155" title="数据库参数设置:" font="default" show="1" />
+			<text name="text_IP"  align="right" pos="180,175,250,200" title="IP:" font="default" show="1" />
+			<edit name="edit_IP" skin="IDB_EDIT" pos="260,170,460,200"  multiline="0" autohscroll="1" autovscroll="0" number="0" readonly="0" maxchar="50"
+					font="default" crtext="0,0,0" crtip="128,128,128,128" />
+			
+			<text name="text_user"  align="right" pos="180,255,250,280" title="用户名:" font="default" show="1" />
+			<edit name="edit_user" skin="IDB_EDIT" pos="260,250,460,280"  multiline="0" autohscroll="1" autovscroll="0" number="0" readonly="0" maxchar="50"
+					font="default" crtext="0,0,0" crtip="128,128,128,128" />
+					
+			<text name="text_pwd"  align="right" pos="180,335,250,360" title="密码:" font="default" show="1" />
+			<edit name="edit_pwd" skin="IDB_EDIT" pos="260,330,460,360"  multiline="0" autohscroll="1" autovscroll="0" number="0" readonly="0" maxchar="50"
+					font="default" crtext="0,0,0" crtip="128,128,128,128" />
+					
+			<text name="text_IP"  align="right" pos="500,175,580,200" title="数据库:" font="default" show="1" />
+			<edit name="edit_IP" skin="IDB_EDIT" pos="590,170,790,200"  multiline="0" autohscroll="1" autovscroll="0" number="0" readonly="0" maxchar="50"
+					font="default" crtext="0,0,0" crtip="128,128,128,128" />
+			
+			<text name="text_user"  align="right" pos="500,255,580,280" title="端口:" font="default" show="1" />
+			<edit name="edit_user" skin="IDB_EDIT" pos="590,250,790,280"  multiline="0" autohscroll="1" autovscroll="0" number="0" readonly="0" maxchar="50"
+					font="default" crtext="0,0,0" crtip="128,128,128,128" />
+					
+			<text name="text_pwd"  align="right" pos="500,335,580,360" title="字符集:" font="default" show="1" />
+			<combobox name="combobox1" skin="IDB_EDIT" small-image="skin:IDB_DROP_DOWN"
+					value="local" tip="选择字符集" 
+					pos="590,330" width="200" height="30"
+					list-height="120" img-scroll="skin:IDB_SCROLL_V"
+					title="gbk" show="1" readonly="1">
+				<item name="gbk" value="1"  />
+				<item name="gb2312" value="2"  />
+				<item name="binary" value="3"  />
+			</combobox>
+
+      
+		</tab>
+		<tab name="tab.control.2" image="skin:IDB_TAB_ITEM" title="PLC" active="false" pos="0,30,-0,-0">
+			<text name="text_dbset"  align="left" pos="260,130,360,155" title="PLC参数修改:" font="default" show="1" />			
+			<text name="text_IP"  align="right" pos="280,175,350,200" title="串口号:" font="default" show="1" />
+			<combobox name="combobox1" skin="IDB_EDIT" small-image="skin:IDB_DROP_DOWN"
+					value="local" tip="选择字符集" 
+					pos="360,170,560,200"
+					list-height="120" img-scroll="skin:IDB_SCROLL_V"
+					title="1" show="1" readonly="1">
+				<item name="1" value="1"  />
+				<item name="2" value="2"  />
+				<item name="3" value="3"  />
+				<item name="4" value="4"  />
+				<item name="5" value="5"  />
+				<item name="6" value="6"  />
+			</combobox>			
+			<text name="text_user"  align="right" pos="280,255,350,280" title="波特率:" font="default" show="1" />
+			<combobox name="combobox1" skin="IDB_EDIT" small-image="skin:IDB_DROP_DOWN"
+					value="local" tip="选择字符集" 
+					pos="360,250,560,280"
+					list-height="120" img-scroll="skin:IDB_SCROLL_V"
+					title="9600" show="1" readonly="1">
+				<item name="9600" value="1"  />
+				<item name="19200" value="2"  />
+				<item name="38400" value="3"  />
+			</combobox>
+		</tab>
+		<tab name="tab.control.3" image="skin:IDB_TAB_ITEM" title="打印机" active="false" pos="0,30,-0,-0">
+			<text name="text_dbset"  align="left" pos="260,130,360,155" title="打印机参数修改:" font="default" show="1" />			
+			<text name="text_IP"  align="right" pos="280,175,350,200" title="串口号:" font="default" show="1" />
+			<combobox name="combobox1" skin="IDB_EDIT" small-image="skin:IDB_DROP_DOWN"
+					value="local" tip="选择字符集" 
+					pos="360,170,560,200"
+					list-height="120" img-scroll="skin:IDB_SCROLL_V"
+					title="1" show="1" readonly="1">
+				<item name="1" value="1"  />
+				<item name="2" value="2"  />
+				<item name="3" value="3"  />
+				<item name="4" value="4"  />
+				<item name="5" value="5"  />
+				<item name="6" value="6"  />
+			</combobox>			
+			<text name="text_user"  align="right" pos="280,255,350,280" title="波特率:" font="default" show="1" />
+			<combobox name="combobox1" skin="IDB_EDIT" small-image="skin:IDB_DROP_DOWN"
+					value="local" tip="选择字符集" 
+					pos="360,250,560,280"
+					list-height="120" img-scroll="skin:IDB_SCROLL_V"
+					title="9600" show="1" readonly="1">
+				<item name="9600" value="1"  />
+				<item name="19200" value="2"  />
+				<item name="38400" value="3"  />
+			</combobox>
+		</tab>
+		<tab name="tab.control.4" image="skin:IDB_TAB_ITEM" title="读卡器" active="false" pos="0,30,-0,-0">
+			<text name="text_dbset"  align="left" pos="260,130,360,155" title="读卡器参数修改:" font="default" show="1" />			
+			<text name="text_IP"  align="right" pos="280,175,350,200" title="串口号:" font="default" show="1" />
+			<combobox name="combobox1" skin="IDB_EDIT" small-image="skin:IDB_DROP_DOWN"
+					value="local" tip="选择字符集" 
+					pos="360,170,560,200"
+					list-height="120" img-scroll="skin:IDB_SCROLL_V"
+					title="1" show="1" readonly="1">
+				<item name="1" value="1"  />
+				<item name="2" value="2"  />
+				<item name="3" value="3"  />
+				<item name="4" value="4"  />
+				<item name="5" value="5"  />
+				<item name="6" value="6"  />
+			</combobox>			
+			<text name="text_user"  align="right" pos="280,255,350,280" title="波特率:" font="default" show="1" />
+			<combobox name="combobox1" skin="IDB_EDIT" small-image="skin:IDB_DROP_DOWN"
+					value="local" tip="选择字符集" 
+					pos="360,250,560,280"
+					list-height="120" img-scroll="skin:IDB_SCROLL_V"
+					title="9600" show="1" readonly="1">
+				<item name="9600" value="1"  />
+				<item name="19200" value="2"  />
+				<item name="38400" value="3"  />
+			</combobox>
+		</tab>
+		<tab name="tab.control.5" image="skin:IDB_TAB_ITEM" title="数码管" active="false" pos="0,30,-0,-0">
+			<text name="text_dbset"  align="left" pos="260,130,360,155" title="数码管参数修改:" font="default" show="1" />			
+			<text name="text_IP"  align="right" pos="280,175,350,200" title="串口号:" font="default" show="1" />
+			<combobox name="combobox1" skin="IDB_EDIT" small-image="skin:IDB_DROP_DOWN"
+					value="local" tip="选择字符集" 
+					pos="360,170,560,200"
+					list-height="120" img-scroll="skin:IDB_SCROLL_V"
+					title="1" show="1" readonly="1">
+				<item name="1" value="1"  />
+				<item name="2" value="2"  />
+				<item name="3" value="3"  />
+				<item name="4" value="4"  />
+				<item name="5" value="5"  />
+				<item name="6" value="6"  />
+			</combobox>			
+			<text name="text_user"  align="right" pos="280,255,350,280" title="波特率:" font="default" show="1" />
+			<combobox name="combobox1" skin="IDB_EDIT" small-image="skin:IDB_DROP_DOWN"
+					value="local" tip="选择字符集" 
+					pos="360,250,560,280"
+					list-height="120" img-scroll="skin:IDB_SCROLL_V"
+					title="9600" show="1" readonly="1">
+				<item name="9600" value="1"  />
+				<item name="19200" value="2"  />
+				<item name="38400" value="3"  />
+			</combobox>
+		</tab>
+		<tab name="tab.control.6" image="skin:IDB_TAB_ITEM" title="扫描枪" active="false" pos="0,30,-0,-0">
+			<text name="text_dbset"  align="left" pos="260,130,360,155" title="扫描枪参数修改:" font="default" show="1" />			
+			<text name="text_IP"  align="right" pos="280,175,350,200" title="串口号:" font="default" show="1" />
+			<combobox name="combobox1" skin="IDB_EDIT" small-image="skin:IDB_DROP_DOWN"
+					value="local" tip="选择字符集" 
+					pos="360,170,560,200"
+					list-height="120" img-scroll="skin:IDB_SCROLL_V"
+					title="1" show="1" readonly="1">
+				<item name="1" value="1"  />
+				<item name="2" value="2"  />
+				<item name="3" value="3"  />
+				<item name="4" value="4"  />
+				<item name="5" value="5"  />
+				<item name="6" value="6"  />
+			</combobox>			
+			<text name="text_user"  align="right" pos="280,255,350,280" title="波特率:" font="default" show="1" />
+			<combobox name="combobox1" skin="IDB_EDIT" small-image="skin:IDB_DROP_DOWN"
+					value="local" tip="选择字符集" 
+					pos="360,250,560,280"
+					list-height="120" img-scroll="skin:IDB_SCROLL_V"
+					title="9600" show="1" readonly="1">
+				<item name="9600" value="1"  />
+				<item name="19200" value="2"  />
+				<item name="38400" value="3"  />
+			</combobox>
+		</tab>
+	</tabctrl>
+	<button name="button_sys_ok" skin="IDB_BT_DEFAULT" title="确定" pos="|-300,-60,|-150,-10" show="1" />	
+	<button name="button_sys_cancel" skin="IDB_BT_DEFAULT" title="取消" pos="|150,-60,|300,-10" show="1" />
+</div>

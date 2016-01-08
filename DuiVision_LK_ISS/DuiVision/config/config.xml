@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="gbk" ?>
+<LAO_KEN_ISAS>
+	<!--Language 0-Chinese 1-English-->
+	<language>0</language>
+    <!--Database-->
+    <host>127.0.0.1</host>
+    <user>root</user>
+    <password>lkyf</password>
+    <db>kokoonheji</db>
+    <port>3306</port>
+    <characterSet>gbk</characterSet>
+    <MachineType>4</MachineType>
+    <MachineID>2</MachineID>
+    <!--Log-->
+    <logPropFile>config\log4cxx.properties</logPropFile>
+    <!--配合盒剂使用0，单独使用1-->
+    <IsUsedAlone>1</IsUsedAlone>
+    <!--启用有效期,0关闭，1药品有效期管理，2 地址有效期管理-->
+    <IsValidTime>2</IsValidTime>
+    <ValidMonth>6</ValidMonth>
+    <!--CardReader-->
+    <CardReader_Port>4</CardReader_Port>
+    <CardReader_Baudrate>9600</CardReader_Baudrate>
+    <!--PLC-->
+    <PlcPort>6</PlcPort>
+    <TierNum>24</TierNum>
+    <TierCapacity>5</TierCapacity>
+    <Offset>2</Offset>
+    <!--Lamp-->
+    <LampPort>2</LampPort>
+    <LampBaudRate>9600</LampBaudRate>
+    <ShowTierNum>4</ShowTierNum>
+    <!--灯板数-->
+    <LampBoardNum>1</LampBoardNum>
+    <!--BarcodeScan-->
+    <BarcodeScanner_Port>1</BarcodeScanner_Port>
+    <BarcodeScanner_Baudrate>9600</BarcodeScanner_Baudrate>
+    <BarcodeScanner_QR_Code>0</BarcodeScanner_QR_Code>
+    <!--ThermalPrinter-->
+    <ThermalPrinter_Port>5</ThermalPrinter_Port>
+    <ThermalPrinter_Baudrate>9600</ThermalPrinter_Baudrate>
+    <rowWidth>32</rowWidth>
+    <IsPrintBarcode>1</IsPrintBarcode>
+    <HPMSize>50</HPMSize>
+    <!--RunMode,0-normal, 1-no device, 2-no login, 9-no device and no login-->
+    <RunMode>1</RunMode>
+    <AddMed>0</AddMed>
+    <!--Setosk,0关闭软键盘,1系统自带软键盘,2模拟软件盘-->
+    <Openosk>2</Openosk>
+    <!--DoubleFace, 0单门，1双门-->
+    <DoubleFace>0</DoubleFace>
+</LAO_KEN_ISAS>
