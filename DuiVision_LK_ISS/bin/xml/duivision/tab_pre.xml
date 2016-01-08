@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<div pos="0,5,-0,-0">
+	<text name="text_hisid"  align="center" pos="0,5,100,25" title="HIS处方号" font="big" show="1" />
+	<edit name="edit_hisid" skin="IDB_EDIT" pos="120,5" width="220" height="32" multiline="0" autohscroll="1" autovscroll="0" number="0" readonly="0" maxchar="50"
+					font="default" crtext="0,0,0" crtip="128,128,128,128" />
+</div>

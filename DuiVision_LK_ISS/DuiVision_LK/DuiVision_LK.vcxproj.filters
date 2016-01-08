@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{a6afda31-b273-430d-a79e-3f710dc5fb09}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9e89542e-a892-4416-b0c8-3b6dd2a89880}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{bea173d6-843b-4592-92db-7a7b90b8b35d}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;manifest</Extensions>
+    </Filter>
+    <Filter Include="xml">
+      <UniqueIdentifier>{64ddebaf-6ee6-4f08-ac8a-3763d3133bd4}</UniqueIdentifier>
+      <Extensions>xml</Extensions>
+    </Filter>
+    <Filter Include="extern">
+      <UniqueIdentifier>{3dd11e32-930d-4ab3-a613-914a7b1dd3b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extern\fxcpu">
+      <UniqueIdentifier>{26a0fe68-5920-41a0-a66b-d2dca48a5588}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extern\rfid">
+      <UniqueIdentifier>{45b5dee7-a28e-49e3-a1a3-c21176cc3fb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extern\serialport">
+      <UniqueIdentifier>{142b099f-3907-476f-b7bd-7352995c6528}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extern\tinyxml">
+      <UniqueIdentifier>{80cf5dc7-836c-461b-a57d-71b863270e4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{1c3297b1-d197-4367-8d2f-a48f5889ed8d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Readme.txt" />
+    <None Include="res\DuiVision_LK.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\DuiVision_LK.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\bin\xml\app\tab_CDuiPrescriptionHandler.xml">
+      <Filter>xml</Filter>
+    </None>
+    <None Include="..\bin\xml\app\tab_CDuiFillMedHandler.xml">
+      <Filter>xml</Filter>
+    </None>
+    <None Include="..\bin\xml\app\tab_CDuiMedManagerHandler.xml">
+      <Filter>xml</Filter>
+    </None>
+    <None Include="..\bin\xml\app\tab_CDuiListenHandler.xml">
+      <Filter>xml</Filter>
+    </None>
+    <None Include="..\bin\xml\app\tab_CDuiSysSetHandler.xml">
+      <Filter>xml</Filter>
+    </None>
+    <None Include="res\KoKoon.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DuiVision_LK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DuiHandlerMain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DuiHandlerCDuiPrescriptionHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DuiHandlerCDuiFillMedHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DuiHandlerCDuiMedManagerHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DuiHandlerCDuiListenHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DuiHandlerCDuiSysSetHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\BarcodeScannerMan.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\CardReader.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\DBMysql.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\DBWrap.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\ErrorCodeRes.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\FxCpuMan.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\General.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\KoKoonDBManage.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\LampMan.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\PortManage.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\RfidMan.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\SingletonMode.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\ThermalPrinter.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\ThermalPrinterISAS.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\ThermalPrinterSPRT.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\ThermalPrinterSPRT_RME3.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\XMLConfig.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="extern\fxcpu\actfxcpu3.h">
+      <Filter>extern\fxcpu</Filter>
+    </ClInclude>
+    <ClInclude Include="extern\tinyxml\tinystr.h">
+      <Filter>extern\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="extern\tinyxml\tinyxml.h">
+      <Filter>extern\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="extern\serial\Serialport.h">
+      <Filter>extern\serialport</Filter>
+    </ClInclude>
+    <ClInclude Include="extern\rfid\RFIDAPIEXPORT.h">
+      <Filter>extern\rfid</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DuiVision_LK.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DuiHandlerMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DuiHandlerCDuiPrescriptionHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DuiHandlerCDuiFillMedHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DuiHandlerCDuiMedManagerHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DuiHandlerCDuiListenHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DuiHandlerCDuiSysSetHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\BarcodeScannerMan.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\CardReader.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\DBMysql.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\DBWrap.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\FxCpuMan.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\General.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\KoKoonDBManage.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\LampMan.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\PortManage.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\RfidMan.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\ThermalPrinter.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\ThermalPrinterISAS.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\ThermalPrinterSPRT.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\ThermalPrinterSPRT_RME3.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\XMLConfig.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="extern\fxcpu\actfxcpu3.cpp">
+      <Filter>extern\fxcpu</Filter>
+    </ClCompile>
+    <ClCompile Include="extern\tinyxml\tinystr.cpp">
+      <Filter>extern\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="extern\tinyxml\tinyxml.cpp">
+      <Filter>extern\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="extern\tinyxml\tinyxmlerror.cpp">
+      <Filter>extern\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="extern\tinyxml\tinyxmlparser.cpp">
+      <Filter>extern\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="extern\serial\SerialPort.cpp">
+      <Filter>extern\serialport</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DuiVision_LK.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
