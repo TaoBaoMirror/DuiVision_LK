@@ -33,6 +33,18 @@ struct GridItemInfo
 	BOOL	bNeedContentTip;// 是否需要显示content tip(content实际宽度大于显示宽度)
 	BOOL	bUseTitleFont;	// 是否使用标题字体显示标题
 	vector<CControlBase *>	vecControl;// 控件列表
+	GridItemInfo()
+	{
+		strTitle=_T("");
+		strContent=_T("");
+		pImage=NULL;
+		strLink=_T("");
+		strLinkAction=_T("");
+		bNeedTitleTip=FALSE;
+		bNeedContentTip=FALSE;
+		bUseTitleFont=FALSE;
+		vecControl.clear();
+	}
 };
 
 // 行信息
@@ -103,7 +115,7 @@ public:
 protected:
 	vector<GridColumnInfo> m_vecColumnInfo;
 	vector<GridRowInfo> m_vecRowInfo;
-
+	CRITICAL_SECTION m_cs;//关键代码段
 	virtual void SetControlRect(CRect rc);
 	virtual void DrawControl(CDC &dc, CRect rcUpdate);
 

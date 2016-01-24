@@ -6,7 +6,7 @@
     <host>127.0.0.1</host>
     <user>root</user>
     <password>lkyf</password>
-    <db>kokoonheji</db>
+    <db>kokoon_zncq</db>
     <port>3306</port>
     <characterSet>gbk</characterSet>
     <MachineType>4</MachineType>
