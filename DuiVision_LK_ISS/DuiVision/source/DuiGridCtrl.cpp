@@ -51,10 +51,14 @@ CDuiGridCtrl::CDuiGridCtrl(HWND hWnd, CDuiObject* pDuiObject)
 	m_nLastViewRow = 0;
 	m_nVirtualTop = 0;
 	m_nVirtualLeft = 0;
+	InitializeCriticalSection(&m_cs);
 }
 
 CDuiGridCtrl::~CDuiGridCtrl(void)
 {
+	m_vecControl.clear();
+	m_vecRowInfo.clear();
+	DeleteCriticalSection(&m_cs);
 	if(m_pImageSeperator != NULL)
 	{
 		delete m_pImageSeperator;
@@ -431,12 +435,16 @@ int CDuiGridCtrl::InsertRow(int nRow, GridRowInfo &rowInfo)
 	int nRetRow = -1;
 	if(nRow <= -1 || nRow >= (int)m_vecRowInfo.size())
 	{
+		EnterCriticalSection(&m_cs);
 		m_vecRowInfo.push_back(rowInfo);
+		LeaveCriticalSection(&m_cs);
 		nRetRow = m_vecRowInfo.size()-1;
 	}
 	else
 	{
+		EnterCriticalSection(&m_cs);
 		m_vecRowInfo.insert(m_vecRowInfo.begin() + nRow, rowInfo);
+		LeaveCriticalSection(&m_cs);
 		nRetRow = nRow;
 	}
 
@@ -618,6 +626,7 @@ BOOL CDuiGridCtrl::AddSubItemControl(int nRow, int nItem, CControlBase* pControl
 BOOL CDuiGridCtrl::DeleteSubItemControl(CControlBase* pControl)
 {
 	// 查找所有单元格,删除对应的控件对象引用
+	EnterCriticalSection(&m_cs);
 	for(size_t i = 0; i < m_vecRowInfo.size(); i++)
 	{
 		GridRowInfo &rowInfo = m_vecRowInfo.at(i);
@@ -639,7 +648,7 @@ BOOL CDuiGridCtrl::DeleteSubItemControl(CControlBase* pControl)
 
 	// 删除子控件中对应的控件对象
 	RemoveControl(pControl);
-
+	LeaveCriticalSection(&m_cs);
 	return TRUE;
 }
 
@@ -647,6 +656,7 @@ BOOL CDuiGridCtrl::DeleteSubItemControl(CControlBase* pControl)
 BOOL CDuiGridCtrl::DeleteSubItemControl(CString strControlName, UINT uControlID)
 {
 	// 查找所有单元格,删除对应的控件对象引用
+	EnterCriticalSection(&m_cs);
 	for(size_t i = 0; i < m_vecRowInfo.size(); i++)
 	{
 		GridRowInfo &rowInfo = m_vecRowInfo.at(i);
@@ -668,7 +678,7 @@ BOOL CDuiGridCtrl::DeleteSubItemControl(CString strControlName, UINT uControlID)
 
 	// 删除子控件中对应的控件对象
 	RemoveControl(strControlName, uControlID);
-
+	LeaveCriticalSection(&m_cs);
 	return TRUE;
 }
 
@@ -683,6 +693,7 @@ BOOL CDuiGridCtrl::DeleteRow(int nRow)
 	}
 
 	// 查找行的所有单元格,删除对应的子控件对象
+	EnterCriticalSection(&m_cs);
 	GridRowInfo &rowInfo = m_vecRowInfo.at(nRow);
 	for(size_t j = 0; j < rowInfo.vecItemInfo.size(); j++)
 	{
@@ -708,7 +719,7 @@ BOOL CDuiGridCtrl::DeleteRow(int nRow)
 		}
 		nIndex++;
 	}
-
+	LeaveCriticalSection(&m_cs);
 	// 计算所有表格行的位置
 	CalcRowsPos();
 
@@ -723,6 +734,7 @@ void CDuiGridCtrl::CalcRowsPos()
 	int nYPos = 0;//m_rc.top;
 
 	// 计算每一行的位置
+	EnterCriticalSection(&m_cs);
 	for(size_t i = 0; i < m_vecRowInfo.size(); i++)
 	{
 		GridRowInfo &rowInfoTemp = m_vecRowInfo.at(i);
@@ -742,7 +754,7 @@ void CDuiGridCtrl::CalcRowsPos()
 
 		nYPos += m_nRowHeight;
 	}
-
+	LeaveCriticalSection(&m_cs);
 	// 需要的总高度大于显示区高度才会显示滚动条
 	m_pControScrollV->SetVisible(((int)m_vecRowInfo.size() * m_nRowHeight) > (m_rc.Height() - m_nHeaderHeight));
 	((CDuiScrollVertical*)m_pControScrollV)->SetScrollMaxRange(m_vecRowInfo.size() * m_nRowHeight);
@@ -871,6 +883,7 @@ int CDuiGridCtrl::GetRowCheck(int nRow)
 void CDuiGridCtrl::ClearItems()
 {
 	// 删除所有子控件
+	EnterCriticalSection(&m_cs);
 	for(size_t i = 0; i < m_vecRowInfo.size(); i++)
 	{
 		GridRowInfo &rowInfo = m_vecRowInfo.at(i);
@@ -887,6 +900,7 @@ void CDuiGridCtrl::ClearItems()
 	}
 
 	m_vecRowInfo.clear();
+	LeaveCriticalSection(&m_cs);
 	m_pControScrollV->SetVisible(FALSE);
 	UpdateControl(true);
 }
@@ -1518,6 +1532,7 @@ void CDuiGridCtrl::DrawControl(CDC &dc, CRect rcUpdate)
 
 		if(m_vecRowInfo.size() > 0)
 		{
+			EnterCriticalSection(&m_cs);
 			for(int i = m_nFirstViewRow; i <= m_nLastViewRow && i < (int)m_vecRowInfo.size(); i++)
 			{
 				GridRowInfo &rowInfo = m_vecRowInfo.at(i);
@@ -1663,9 +1678,10 @@ void CDuiGridCtrl::DrawControl(CDC &dc, CRect rcUpdate)
 												solidBrushItem.SetColor(rowInfo.clrText);
 											}
 											CString strItemTitle = itemInfo.strTitle;
+											CString strTempItemstrConten=itemInfo.strContent;
 											// 计算是否需要显示tip
 											itemInfo.bNeedTitleTip = rect.Width < GetTextBounds(font, strItemTitle).Width;
-											itemInfo.bNeedContentTip = rect.Width < GetTextBounds(font, itemInfo.strContent).Width;
+											itemInfo.bNeedContentTip = rect.Width < GetTextBounds(font, strTempItemstrConten).Width;
 											if(!itemInfo.strLink.IsEmpty())
 											{
 												strItemTitle = itemInfo.strLink;
@@ -1808,6 +1824,7 @@ void CDuiGridCtrl::DrawControl(CDC &dc, CRect rcUpdate)
 					}
 				}
 			}
+			LeaveCriticalSection(&m_cs);
 		}
 	}
 
